@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mishsapp.quizcreationapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.QuizCreationApplication">
+        <activity android:name=".add_que.que_type.AddGapFillingQueActivity"></activity>
+        <activity android:name=".add_que.que_type.AddTrueFalseQueActivity" />
+        <activity android:name=".create_exam.CreateExamActivity" />
+        <activity android:name=".list_all_que.ListAllQueActivity" />
+        <activity android:name=".remove_que.RemoveQueActivity" />
+        <activity android:name=".add_que.que_type.AddMultipleChoiceQueActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".add_que.que_type.AddClassicQueActivity" />
+        <activity android:name=".add_que.AddQueActivity" />
+    </application>
+
+
+</manifest>

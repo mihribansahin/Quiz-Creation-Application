@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add_que.que_type.AddGapFillingQueActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <EditText
+            android:id="@+id/editTextGapFillingQuestion"
+            android:layout_width="308dp"
+            android:layout_height="92dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="40dp"
+            android:ems="10"
+            android:hint=" Cümlenin Tümünü Bu Alana Giriniz..."
+            android:inputType="textPersonName"
+            android:nestedScrollingEnabled="true" />
+
+        <LinearLayout
+            android:layout_width="259dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextGapFillingDeletedWordAnswer"
+                android:layout_width="259dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:hint="Silinecek Kelimeyi Giriniz.."
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"/>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonGapFillingEasy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:text="KOLAY"
+                app:backgroundTint="#FF6D00" />
+
+            <Button
+
+                android:id="@+id/buttonGapFillingMiddle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:text="ORTA"
+                app:backgroundTint="#FF6D00" />
+
+            <Button
+                android:id="@+id/buttonGapFillingHard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:text="ZOR"
+                app:backgroundTint="#FF6D00" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editTextGapFillingPoint"
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:hint="Puan"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/buttonGapFillingSave"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="20dp"
+            android:text="KAYDET" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

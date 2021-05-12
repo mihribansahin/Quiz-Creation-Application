@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add_que.AddQueActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="OLUŞTURACAĞINIZ SORU TİPİNİ SEÇİNİZ"
+        android:textColor="#A396A3"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonTest"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+
+    <Button
+        android:id="@+id/buttonClassic"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:text="KLASİK >"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonTrueFalse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTest" />
+
+    <Button
+        android:id="@+id/buttonTest"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:text="ÇOKTAN SEÇMELİ > "
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonClassic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/buttonTrueFalse"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:text="DOĞRU-YANLIŞ >"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonGapFilling"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonClassic" />
+
+    <Button
+        android:id="@+id/buttonGapFilling"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:text="BOŞLUK DOLDURMA >"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTrueFalse" />
+</androidx.constraintlayout.widget.ConstraintLayout>
