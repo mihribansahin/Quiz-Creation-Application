@@ -40,21 +40,21 @@
             <Button
                 android:id="@+id/buttonTrue"
                 android:layout_width="wrap_content"
-                android:layout_height="80dp"
+                android:layout_height="50dp"
                 android:layout_marginRight="15dp"
                 android:layout_weight="1"
                 android:text="DOĞRU"
-                app:backgroundTint="#A1019A03" />
+                app:backgroundTint="#CE00C503" />
 
             <Button
                 android:id="@+id/buttonFalse"
                 android:layout_width="wrap_content"
-                android:layout_height="80dp"
+                android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:layout_marginLeft="24dp"
                 android:layout_weight="1"
                 android:text="YANLIŞ"
-                app:backgroundTint="#709A0707" />
+                app:backgroundTint="#970F0F" />
 
         </LinearLayout>
 

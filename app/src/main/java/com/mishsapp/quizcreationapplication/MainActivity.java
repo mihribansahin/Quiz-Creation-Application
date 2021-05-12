@@ -8,6 +8,7 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.mishsapp.quizcreationapplication.add_que.AddQueActivity;
+import com.mishsapp.quizcreationapplication.remove_que.RemoveQueActivity;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -34,6 +35,9 @@ public class MainActivity extends AppCompatActivity {
         buttonRemoveQue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, RemoveQueActivity.class);
+                startActivity(intent);
+
 
             }
         });

@@ -9,17 +9,16 @@ import android.widget.EditText;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.mishsapp.quizcreationapplication.R;
-
-
 public class AddMultipleChoiceQueActivity extends AppCompatActivity {
 
-    private EditText editTextTestQuestion, editTextTestOption1, editTextTestOption2, editTextTestOption3, editTextTestOption4,
+    private EditText editTextTestQuestion,
+            editTextTestOption1, editTextTestOption2, editTextTestOption3, editTextTestOption4,
             editTextTestPoint;
-    private Button buttonTestEasy, buttonTestMiddle, buttonTestHard, buttonTestSave;
+    private Button buttonTestEasy, buttonTestMiddle, buttonTestHard,
+            buttonTestSave;
     private CheckBox checkBoxOption1, checkBoxOption2, checkBoxOption3, checkBoxOption4;
 
     void init(){
-
         editTextTestQuestion = findViewById(R.id.editTextTestQuestion);
         editTextTestOption1 = findViewById(R.id.editTextTestOption1);
         editTextTestOption2 = findViewById(R.id.editTextTestOption2);
@@ -34,7 +33,6 @@ public class AddMultipleChoiceQueActivity extends AppCompatActivity {
         checkBoxOption2 = findViewById(R.id.checkBoxOption2);
         checkBoxOption3 = findViewById(R.id.checkBoxOption3);
         checkBoxOption4 = findViewById(R.id.checkBoxOption4);
-
 
         buttonTestEasy.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,7 +65,6 @@ public class AddMultipleChoiceQueActivity extends AppCompatActivity {
         editTextTestQuestion.getText();
 
 
-
     }
 
 
@@ -78,11 +75,6 @@ public class AddMultipleChoiceQueActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setTitle("Çoktan Seçmeli Soru Ekle");
         init();
-
-
-
-
-
 
     }
 }
