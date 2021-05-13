@@ -8,6 +8,7 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.mishsapp.quizcreationapplication.add_que.AddQueActivity;
+import com.mishsapp.quizcreationapplication.list_all_que.ListAllQueActivity;
 import com.mishsapp.quizcreationapplication.remove_que.RemoveQueActivity;
 
 
@@ -45,6 +46,8 @@ public class MainActivity extends AppCompatActivity {
         buttonAllListQue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ListAllQueActivity.class);
+                startActivity(intent);
 
             }
         });

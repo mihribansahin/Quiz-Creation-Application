@@ -21,15 +21,27 @@
 
         <EditText
             android:id="@+id/editTextTestQuestion"
-            android:layout_width="319dp"
-            android:layout_height="157dp"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
             android:layout_gravity="center"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:layout_marginBottom="40dp"
-            android:ems="10"
+            android:layout_marginBottom="30dp"
+
             android:hint=" Sorunuzu Bu Alana Giriniz..."
             android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="'TEK' doğru şıkkı işaretleyiniz"
+            android:layout_gravity="right"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:layout_marginRight="35dp"
+            android:layout_marginLeft="200dp"
+            />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -47,6 +59,8 @@
                 android:inputType="textPersonName" />
 
             <CheckBox
+               android:buttonTint="#FF6D00"
+                android:onClick="onCheckboxClicked"
                 android:id="@+id/checkBoxOption1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -69,6 +83,8 @@
                 android:inputType="textPersonName" />
 
             <CheckBox
+                android:buttonTint="#FF6D00"
+                android:onClick="onCheckboxClicked"
                 android:id="@+id/checkBoxOption2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -91,6 +107,8 @@
                 android:inputType="textPersonName" />
 
             <CheckBox
+                android:buttonTint="#FF6D00"
+                android:onClick="onCheckboxClicked"
                 android:id="@+id/checkBoxOption3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -113,6 +131,9 @@
                 android:inputType="textPersonName" />
 
             <CheckBox
+
+                android:buttonTint="#FF6D00"
+                android:onClick="onCheckboxClicked"
                 android:id="@+id/checkBoxOption4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

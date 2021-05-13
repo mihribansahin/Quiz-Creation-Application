@@ -26,7 +26,7 @@
     <Button
         android:id="@+id/buttonClassic"
         android:layout_width="320dp"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:text="KLASİK >"
         android:textSize="15dp"
         app:layout_constraintBottom_toTopOf="@+id/buttonTrueFalse"
@@ -38,7 +38,7 @@
     <Button
         android:id="@+id/buttonTest"
         android:layout_width="320dp"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:text="ÇOKTAN SEÇMELİ > "
         android:textSize="15dp"
         app:layout_constraintBottom_toTopOf="@+id/buttonClassic"
@@ -50,7 +50,7 @@
     <Button
         android:id="@+id/buttonTrueFalse"
         android:layout_width="320dp"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:text="DOĞRU-YANLIŞ >"
         android:textSize="15dp"
         app:layout_constraintBottom_toTopOf="@+id/buttonGapFilling"
@@ -62,7 +62,7 @@
     <Button
         android:id="@+id/buttonGapFilling"
         android:layout_width="320dp"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:text="BOŞLUK DOLDURMA >"
         android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
