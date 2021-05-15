@@ -2,18 +2,22 @@ package com.mishsapp.quizcreationapplication;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.mishsapp.quizcreationapplication.add_que.AddQueActivity;
+import com.mishsapp.quizcreationapplication.add_que.que_type.AddClassicQueActivity;
 import com.mishsapp.quizcreationapplication.list_all_que.ListAllQueActivity;
 import com.mishsapp.quizcreationapplication.remove_que.RemoveQueActivity;
 
 
 public class MainActivity extends AppCompatActivity {
     private Button buttonAddQue, buttonRemoveQue, buttonAllListQue, buttonCreatingExam;
+
+    AddClassicQueActivity acq = new AddClassicQueActivity();
 
     private void init(){
 
@@ -48,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, ListAllQueActivity.class);
                 startActivity(intent);
+
 
             }
         });

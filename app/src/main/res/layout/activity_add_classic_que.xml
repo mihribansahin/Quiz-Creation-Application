@@ -108,13 +108,20 @@
             android:inputType="textPersonName" />
 
         <Button
-            android:id="@+id/buttonClassicSave"
+            android:id="@+id/buttonClassicNewQueAdd"
             android:layout_width="170dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="60dp"
+            android:text="EKLE" />
+        <Button
+            android:id="@+id/buttonClassicSave"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
             android:layout_marginBottom="20dp"
-            android:text="KAYDET" />
+            android:text="DOSYAYA KAYDET" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
