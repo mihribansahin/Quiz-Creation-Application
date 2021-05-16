@@ -14,7 +14,6 @@ import java.util.List;
 
 public class Operations {
     static File file;
-
     // dosya yazar
    public static void writeFile(List<HashMap<String, String>> arrayList) {
         try {
@@ -60,12 +59,8 @@ public class Operations {
             while((read = fr.read()) != -1){
                 sb.append((char) read);
             }
-
             okuyucu.close();
-
             Log.e("BufferedReader: ", sb.toString());
-
-
 
         } catch (IOException e) {
             e.printStackTrace();
